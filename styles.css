@@ -1,7 +1,62 @@
+html{
+    background-image: url("");
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.navcontainer{
+    display: inline;
+    margin-left: 5px;
+    margin-right:5px;
+}
+.thumbnail-container{
+    display: flex;
+    flex-direction: row;
+}
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+#mainproductimage{
+    border-radius: 3%;
+    width: 50%;
+    height: auto;
+}
+
+#image-product-1-thumbnail{
+    border-radius: 3%;
+    width: 30%;
+    height: auto;
+}
+#image-product-2-thumbnail{
+    border-radius: 3%;
+    width: 30%;
+    height: auto;
+}
+#image-product-3-thumbnail{
+    border-radius: 3%;
+    width: 30%;
+    height: auto;
+}
+#image-product-4-thumbnail{
+    border-radius: 3%;
+    width: 30%;
+    height: auto;
+}
+.product-name{
+    font-weight: bold;
+}
+.company-name{
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
 }
