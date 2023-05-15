@@ -34,6 +34,9 @@ html{
     display: flex;
     flex-direction: row;
 }
+.product-info{
+    margin-left: 15%;
+}
 #mainproductimage{
     border-radius: 3%;
     width: 50%;

@@ -3,6 +3,7 @@ document.getElementById("product-count").innerText = productcount;
 
 function deleteproduct() {
     if (productcount <= 0){
+        alert("There should be at least 1")
         return false;
     } else {
         productcount = productcount - 1 
