@@ -34,17 +34,18 @@
     </div>
     <div class="product-info">
       <div id = "company-title"><p class="company-name">Sneaker Company</p></div>
-        <div id = "product-name">Fall Limited Edition Sneakers</div>
+        <div id = "product-name"><p class ="product-title">Fall Limited Edition Sneakers</p></div>
           <div id = "product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber n outer sole, they’ll withstand everything the weather can offer.
           </div>
           <div id = "product-price">$125.00</div>
           <div id = "discount">50%</div>
           <div id = "product-original-price">$250.00</div>
-          <button class="subtract">-</button><span class="product-count"> 0</span>
-          <button class="add">+</button>
+          <button onclick="deleteproduct()">-</button>
+          <h2 id="product-count"> </h2>
+          <button onclick="addproduct()">+</button>
           <div id = "addtocartbutton">
-          <button class="addtocart">Add to Cart</button>
+          <button id="addtocart">Add to Cart</button>
           </div>
         </div>
 </div>

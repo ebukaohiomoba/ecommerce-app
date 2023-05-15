@@ -11,6 +11,13 @@ html{
     display: flex;
     flex-direction: row;
 }
+
+.thumbnail-container img{
+    border-radius: 10%;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -33,11 +40,11 @@ html{
     height: auto;
 }
 
-#image-product-1-thumbnail{
+ #image-product-1-thumbnail{
     border-radius: 3%;
     width: 30%;
     height: auto;
-}
+} /*
 #image-product-2-thumbnail{
     border-radius: 3%;
     width: 30%;
@@ -53,10 +60,12 @@ html{
     width: 30%;
     height: auto;
 }
-.product-name{
-    font-weight: bold;
-}
+*/
 .company-name{
     color: hsl(26, 100%, 55%);
+    font-weight: bold;
+}
+.product-title{
+    font-size: 40px;
     font-weight: bold;
 }
