@@ -2,11 +2,25 @@ html{
     background-image: url("");
     font-family: 'Kumbh Sans', sans-serif;
 }
-.navcontainer{
-    display: inline;
+nav{
+    display: flex;
+    margin-top: 2%;
     margin-left: 5px;
     margin-right:5px;
+    justify-content: space-evenly;  
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+
 }
+nav a{
+    text-decoration: none;
+    color: hsl(220, 14%, 75%);
+}
+#profilepic{
+    margin-top: -15px;
+    max-width: 40%;
+}
+
+
 .thumbnail-container{
     display: flex;
     flex-direction: row;
@@ -34,20 +48,52 @@ html{
     display: flex;
     flex-direction: row;
 }
+.image-container{
+    margin-top: 5%;
+}
 .product-info{
-    margin-left: 15%;
+    margin: 5% 1% 0% 18%;
+}
+#product-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+}
+#addandsubtract {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 #mainproductimage{
     border-radius: 3%;
-    width: 50%;
+    margin-left: 35px;
+    width: 70%;
     height: auto;
+    margin-top: -40px;
 }
 
  #image-product-1-thumbnail{
     border-radius: 3%;
-    width: 30%;
+    width: 70%;
     height: auto;
-} /*
+} 
+button {
+    background-color: hsl(26, 100%, 55%);
+}
+
+#addtocart {
+    background-color: hsl(26, 100%, 55%);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 20px;
+    width: 300px;
+    margin-top: 20px;
+
+}
+
+#addtocart:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*
 #image-product-2-thumbnail{
     border-radius: 3%;
     width: 30%;
@@ -71,4 +117,8 @@ html{
 .product-title{
     font-size: 40px;
     font-weight: bold;
+}
+.discount{
+    background-color: hsl(26, 100%, 55%);
+
 }

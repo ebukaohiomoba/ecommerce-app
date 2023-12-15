@@ -8,19 +8,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <title>E-commerce product page</title>
+  <title>E-commerce App</title>
 
  <link rel = 'stylesheet' href = 'styles.css'>
 </head>
 <body>
 <div class="pagecontainer">
   <nav class="navcontainer">
-    <a href="/index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+    <a href="/index.html"><div class="logo"> <img src="images/logo.svg" alt="logo"></div></a>
       <a href="/collections/">Collections</a>
       <a href="/men/">Men</a>
       <a href="/women/">Women</a>
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
+      <div class="cart"><img src="images/icon-cart.svg" alt="cart"></div>
+      <div class="profile"><img src="images/image-avatar.png" id="profilepic" alt="profile"></div>
  </nav>
 <div class="main-content">
     <div class="image-container">
@@ -38,16 +40,20 @@
           <div id = "product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
           durable rubber n outer sole, they’ll withstand everything the weather can offer.
           </div>
-          <div id = "product-price">$125.00</div>
-          <div id = "discount">50%</div>
-          <div id = "product-original-price">$250.00</div>
-          <button onclick="deleteproduct()">-</button>
-          <h2 id="product-count"> </h2>
-          <button onclick="addproduct()">+</button>
-          <div id = "addtocartbutton">
-          <button id="addtocart">Add to Cart</button>
-          </div>
-        </div>
+            <div id = "product-price"><h2>$125.00</h2></div>
+            <div id = "discount">50%</div>
+            <div id = "product-original-price">$250.00</div>
+            <div id = "product-number">
+              <div id = "addandsubtract">
+                <button id = "subtractbutton" onclick="deleteproduct()">-</button>
+                <h2 id="product-count"> </h2>
+                <button id = "addbutton" onclick="addproduct()">+</button>
+              </div>
+              <div id = "addtocartbutton">
+              <button id="addtocart">Add to Cart</button>
+              </div>
+           </div>
+    </div>
 </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

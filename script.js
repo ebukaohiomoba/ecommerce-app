@@ -1,4 +1,5 @@
 let productcount = 0;
+let thumbnailpictures = document.getElementsByTagName("img")
 document.getElementById("product-count").innerText = productcount;
 
 function deleteproduct() {
@@ -19,5 +20,17 @@ function addproduct() {
         document.getElementById("product-count").innerText = productcount;
     }
 }
+
+ 
+for(let i=0; i <= thumbnailpictures.length; i++){
+    thumbnailpictures[i].onmouseover = function (){
+        this.style.borderColor = "red";
+    }
+    thumbnailpictures[i].onmouseout = function (){
+        this.style.borderColor = "grey";
+    }
+}
+
+
 
 
