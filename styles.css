@@ -47,12 +47,13 @@ nav a{
 .main-content {
     display: flex;
     flex-direction: row;
+    margin-top: 5%
 }
 .image-container{
     margin-top: 5%;
 }
 .product-info{
-    margin: 5% 1% 0% 18%;
+    margin: 5% 3% 0% 18%;
 }
 #product-number {
     display: flex;
