@@ -94,23 +94,7 @@ button {
 #addtocart:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-/*
-#image-product-2-thumbnail{
-    border-radius: 3%;
-    width: 30%;
-    height: auto;
-}
-#image-product-3-thumbnail{
-    border-radius: 3%;
-    width: 30%;
-    height: auto;
-}
-#image-product-4-thumbnail{
-    border-radius: 3%;
-    width: 30%;
-    height: auto;
-}
-*/
+
 .company-name{
     color: hsl(26, 100%, 55%);
     font-weight: bold;
@@ -122,4 +106,8 @@ button {
 .discount{
     background-color: hsl(26, 100%, 55%);
 
+}
+#subtractbutton {
+    height: 80px;
+    length: 200px;
 }
