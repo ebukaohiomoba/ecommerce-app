@@ -1,5 +1,6 @@
 let productcount = 0;
 let thumbnailpictures = document.getElementsByTagName("img")
+let userSearch = parseInt(document.getElementsByClassName("search-input").innerText)
 document.getElementById("product-count").innerText = productcount;
 
 function deleteproduct() {
@@ -21,15 +22,19 @@ function addproduct() {
     }
 }
 
- 
-for(let i=0; i <= thumbnailpictures.length; i++){
-    thumbnailpictures[i].onmouseover = function (){
-        this.style.borderColor = "red";
-    }
-    thumbnailpictures[i].onmouseout = function (){
-        this.style.borderColor = "grey";
+function productLookup(){
+    for(let i =0; i<= userSearch.length;i++){
+        console.log( 'We have the item' + userSearch + " available.")
     }
 }
+// for(let i=0; i <= thumbnailpictures.length; i++){
+//     thumbnailpictures[i].onmouseover = function (){
+//         this.style.borderColor = "red";
+//     }
+//     thumbnailpictures[i].onmouseout = function (){
+//         this.style.borderColor = "grey";
+//     }
+// }
 
 
 
