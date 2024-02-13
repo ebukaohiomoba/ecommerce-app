@@ -1,68 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <script src="script.js" defer></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <title>E-commerce App</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Collections</title>
+        <script type= "text/javascrpit" src="test.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
 
- <link rel = 'stylesheet' href = 'styles.css'>
-</head>
-<body>
-<div class="pagecontainer">
-  <nav class="navcontainer">
-    <a href="/index.html"><div class="logo"> <img src="images/logo.svg" alt="logo"></div></a>
-      <a href="/collections/">Collections</a>
-      <a href="/men/">Men</a>
-      <a href="/women/">Women</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <form action="/">
-        <input type="text" placeholder="Search" name="search" class="search-input">
-        <button type="submit" onclick="productLookup()"><i class="fa fa-search"></i></button>
-      </form>
-      <div class="cart"><img src="images/icon-cart.svg" alt="cart"></div>
-      <div class="profile"><img src="images/image-avatar.png" id="profilepic" alt="profile"></div>
- </nav>
-<div class="main-content">
-    <div class="image-container">
-      <img id="mainproductimage" src="images/image-product-1.jpg">
-      <div class="thumbnail-container">
-        <img id="image-product-1-thumbnail" src="images/image-product-1-thumbnail.jpg">
-        <img id="image-product-2-thumbnail" src="images/image-product-2-thumbnail.jpg">
-        <img id="image-product-2-thumbnail" src="images/image-product-3-thumbnail.jpg">
-        <img id="image-product-4-thumbnail" src="images/image-product-4-thumbnail.jpg">
-      </div>
-    </div>
-    <div class="product-info">
-      <div id = "company-title"><p class="company-name">Sneaker Company</p></div>
-        <div id = "product-name"><p class ="product-title">Fall Limited Edition Sneakers</p></div>
-          <div id = "product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
-          durable rubber n outer sole, they’ll withstand everything the weather can offer.
-          </div>
-            <div id = "product-price"><h2>$125.00</h2></div>
-            <div id = "discount">50%</div>
-            <div id = "product-original-price">$250.00</div>
-            <div id = "product-number">
-              <div id = "addandsubtract">
-                <button id = "subtractbutton" onclick="deleteproduct()">-</button>
-                <h2 id="product-count"> </h2>
-                <button id = "addbutton" onclick="addproduct()">+</button>
-              </div>
-              <div id = "addtocartbutton">
-              <button id="addtocart">Add to Cart</button>
-              </div>
-           </div>
-    </div>
-</div>
-    <div class="attribution">
-      Challenge inspired by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Chukwuebuka Ohiomoba</a>.
-    </div>
-</div>
-</body>
+    </head>
+    <body>
+        <nav class="navcontainer">
+            <a href="/index.html"><div class="logo"> <img src="images/logo.svg" alt="logo"></div></a>
+              <a href="/collections/">Collections</a>
+              <a href="/men/">Men</a>
+              <a href="/women/">Women</a>
+              <a href="/about/">About</a>
+              <a href="/contact/">Contact</a>
+                <input type="text" placeholder="Search" name="search" class="search-input">
+                <button type="button"> Search</button>
+              <div class="cart"><img src="images/icon-cart.svg" alt="cart"></div>
+              <div class="profile"><img src="images/image-avatar.png" id="profilepic" alt="profile"></div>
+         </nav>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="img-area">
+                  <img src="" alt="">
+
+        </div>
+
+    </body>
+      
+
+
+
+
+
+
 </html>
