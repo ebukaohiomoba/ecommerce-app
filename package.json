@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "express.js": "^1.0.0",
     "sneaks-api": "^1.2.3"
   }
 }

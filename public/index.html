@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Collections</title>
+        <script type= "text/javascript" src="/index.js" defer></script>
+        <link rel="stylesheet" href="/styles.css">
+
+    </head>
+    <body>
+        <script>
+                function searchSneakers() {
+                    const keyword = document.getElementById('keyword').value;
+                    fetch(`/api/sneakers/${keyword}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            const list = document.getElementById('sneaker-list');
+                            list.innerHTML = '';
+                            for (let i = 0; i < data.length; i++) {
+                                const sneaker = data[i];
+                                const listItem = document.createElement('li');
+                                listItem.innerHTML = `
+                                    <h2>${sneaker.shoeName}</h2>
+                                    <p>Brand: ${sneaker.brand}</p>
+                                    <p>Retail Price: $${sneaker.retailPrice}</p>
+                                    <img src="${sneaker.thumbnail}" alt="${sneaker.shoeName}">
+                                `;
+                                list.appendChild(listItem);
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+        </script>
+        <nav class="navcontainer">
+            <a href="/index.html"><div class="logo"> <img src="images/logo.svg" alt="logo"></div></a>
+              <a href="/pages/products.html">Products</a>
+              <a href="/pages/aboutus.html">About</a>
+                <input type="text" id="keyword" placeholder="Search" name="search" class="search-input">
+                <button type="button" class="search-btn" onclick="searchSneakers()"> Search<i class="fas fa-search"></i></button>
+              <div class="cart"><img src="images/icon-cart.svg" alt="cart"></div>
+              <div class="profile"><img src="images/image-avatar.png" id="profilepic" alt="profile"></div>
+         </nav>
+        
+         <h1>Welcome to StepStyle</h1>
+         <ul id="sneaker-list"></ul>
+        
+        
+        
+        <div class="img-area">
+                  <img src="" alt="">
+
+        </div>
+
+    </body>
+      
+
+
+
+
+
+
+</html>
