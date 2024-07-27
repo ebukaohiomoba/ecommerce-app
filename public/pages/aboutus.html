@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <script type="text/javascript" src="../scripts/index.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <nav class="navcontainer">
-        <a href="/index.html"><div class="logo"> <img src="/images/logo.svg" alt="logo"></div></a>
-          <a href="/pages/product.html">Products</a>
-          <a href="/pages/aboutus.html">About</a>
-            <input type="text" placeholder="Search" name="search" class="search-input">
-            <button type="button"> Search Product</button>
-          <div class="cart"><img src="/images/icon-cart.svg" alt="cart"></div>
-          <div class="profile"><img src="/images/image-avatar.png" id="profilepic" alt="profile"></div>
-     </nav>
+        <a href="/"><div class="logo"><img src="../images/logo.svg" alt="logo"></div></a>
+        <a href="/products">Products</a>
+        <a href="/about">About</a>
+        <input type="text" id="keyword" placeholder="Search" name="search" class="search-input">
+        <button type="button" class="search-btn" onclick="searchSneakers()"> Search<i class="fas fa-search"></i></button>
+        <div class="cart"><img src="../images/icon-cart.svg" alt="cart"></div>
+        <div class="profile"><img src="../images/image-avatar.png" id="profilepic" alt="profile"></div>
+    </nav>
 </body>
 </html>

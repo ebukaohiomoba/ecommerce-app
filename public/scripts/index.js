@@ -18,6 +18,4 @@ function searchSneakers() {
             }
         })
         .catch(error => console.error('Error:', error));
-  }
-
-  
+}
