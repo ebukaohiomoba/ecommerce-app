@@ -19,3 +19,10 @@ function searchSneakers() {
         })
         .catch(error => console.error('Error:', error));
 }
+document.addEventListener('DOMContentLoaded', () => {
+
+    viewProductsButton.addEventListener('click', () => {
+        window.location.href = 'products.html';
+    });
+});
+

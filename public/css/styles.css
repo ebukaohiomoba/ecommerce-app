@@ -119,3 +119,9 @@ button {
     font: 20px;
     outline: 0;
 }
+#testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
