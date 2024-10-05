@@ -1,6 +1,15 @@
 {
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "An ecommerce web app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node public/scripts/server.js"
+  },
   "dependencies": {
     "express.js": "^1.0.0",
     "sneaks-api": "^1.2.3"
   }
 }
+
+
